@@ -93,15 +93,4 @@ def five(chars):
     # six('hello world, how are you?', 20) → ['hello world, how are', 'you?']
     
 def six(paragraph, limit):
-    wordlist = paragraph.split(' ')
-    pagelist = []
-    page = ''
-    while wordlist != []:
-        if len(page) + len(wordlist[0]) <= limit:
-            page += (wordlist[0] + ' ')
-            wordlist.remove(wordlist[0])
-        else:
-            pagelist.append(page[0:-1])
-            page = ''
-    pagelist.append(page[0:-1])
-    return pagelist
+    pass
